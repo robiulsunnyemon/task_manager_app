@@ -2,8 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:taskmanagerapp/screens/add_new_task_screen.dart';
 import 'package:taskmanagerapp/screens/auth_screen/login_screen.dart';
 import 'package:taskmanagerapp/screens/auth_screen/update_profile_screen.dart';
+import 'package:taskmanagerapp/screens/cancel_task_screen.dart';
+import 'package:taskmanagerapp/screens/complete_task_screen.dart';
+import 'package:taskmanagerapp/screens/home_screen.dart';
+import 'package:taskmanagerapp/screens/progress_screen.dart';
 import 'package:taskmanagerapp/screens/splash_screen.dart';
-import 'screens/my_home_page.dart';
+import 'package:taskmanagerapp/widgets/bottom_navigation_widget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -22,7 +26,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Task Manager',
-      home:  AddNewTaskScreen(),
+      home:  BottomNavigationWidget(),
       theme: ThemeData(
         inputDecorationTheme: InputDecorationTheme(
           border: OutlineInputBorder(
