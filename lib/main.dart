@@ -26,7 +26,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Task Manager',
-      home:  BottomNavigationWidget(),
+      home:  SplashScreen(),
       theme: ThemeData(
         inputDecorationTheme: InputDecorationTheme(
           border: OutlineInputBorder(
@@ -54,6 +54,7 @@ class _MyAppState extends State<MyApp> {
         )
 
       ),
+      debugShowCheckedModeBanner: false,
     );
   }
 }

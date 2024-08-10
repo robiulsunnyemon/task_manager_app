@@ -42,7 +42,6 @@ class _BottomNavigationWidgetState extends State<BottomNavigationWidget> {
         backgroundColor: Colors.green,
         activeColor: Colors.white,
         color: Colors.white,
-        cornerRadius: 7,
         height: 65,
 
       ),
